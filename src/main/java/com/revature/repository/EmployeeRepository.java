@@ -67,4 +67,5 @@ public interface EmployeeRepository {
 	 * Returns a specific password token.
 	 */
 	public EmployeeToken selectEmployeeToken(EmployeeToken employeeToken);
+	
 }

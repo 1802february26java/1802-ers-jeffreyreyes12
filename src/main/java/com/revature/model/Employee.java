@@ -63,6 +63,11 @@ public class Employee implements Serializable, Comparable<Employee> {
 		this.email = email;
 		this.employeeRole = employeeRole;
 	}
+	
+	public Employee(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
 
 	public int getId() {
 		return id;

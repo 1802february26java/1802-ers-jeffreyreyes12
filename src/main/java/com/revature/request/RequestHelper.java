@@ -2,8 +2,11 @@ package com.revature.request;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.revature.controller.EmployeeInformationControllerAlpha;
 import com.revature.controller.ErrorControllerAlpha;
+import com.revature.controller.HomeControllerAlpha;
 import com.revature.controller.LoginControllerAlpha;
+import com.revature.controller.ReimbursementControllerAlpha;
 
 /**
  * The RequestHelper class is consulted by the MasterServlet and provides
@@ -46,6 +49,14 @@ public class RequestHelper {
 			return new LoginControllerAlpha().login(request);
 		case "/ERS/logout.do":
 			return new LoginControllerAlpha().logout(request);
+		case "/ERS/home.do":
+			return new HomeControllerAlpha().showEmployeeHome(request);
+		case "/ERS/editInfo.do":
+			return new EmployeeInformationControllerAlpha().updateEmployee(request);
+		case "/ERS/allReimbursements.do":
+			return new ReimbursementControllerAlpha().multipleRequests(request);
+		case "/ERS/submitReimbursement.do":
+			return new ReimbursementControllerAlpha().submitRequest(request);
 		default:
 			return new ErrorControllerAlpha().showError(request);
 		}

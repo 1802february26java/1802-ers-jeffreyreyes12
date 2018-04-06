@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Information</title>
+
+    <link rel="icon" href="images/customer.ico" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- Boostrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/our.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a href="home.do" class="navbar-brand"><strong>ERS</strong></a>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+              <span><strong><small id="username">jeffreyreyes</small></strong></span>
+              <a href="logout.do" class="navbar-default"><strong><small>Logout</small></strong></a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Edit Employee Information</h3>
+            </div>
+            <div class="form-group">
+                <input id="lastName" name="lastname" placeholder="Last Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input id="firstName" name="firstname" placeholder="Fist Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input id="email" name="email" placeholder="Email" class="form-control" />
+            </div>
+            <div id="editInfoMessage"></div>
+            <button id="editEmplInfo" class="btn btn-md btn-success btn-block">Submit</button>
+        </div>
+    </div>
+    <script src="js/edit-info.js"></script>
+</body>
+</html>

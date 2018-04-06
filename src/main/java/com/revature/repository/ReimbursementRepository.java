@@ -73,4 +73,6 @@ public interface ReimbursementRepository {
 	 * Returns a set of all reimbursement types.
 	 */
 	public Set<ReimbursementType> selectTypes();
+	
+	public ReimbursementType getReimbursementType(String type);
 }
